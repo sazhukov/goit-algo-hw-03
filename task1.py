@@ -1,6 +1,7 @@
 from datetime import datetime
 
-def get_days_from_today(date):
+def get_days_from_today(date: str) -> int:
+    '''Calculates number of days from date to current date'''
     try:
         date_obj = datetime.strptime(date, '%Y-%m-%d')
     except ValueError:
